@@ -15,7 +15,7 @@ while correct:
     items = menu.get_items()
 
     # Gets the input (drink) of the user.
-    drink = input(f"What do you want to drink? ({items}): ")
+    drink = input(f"What do you want to drink? ({items}): ").lower()
 
     # Given a valid drink.
     if drink in items:
