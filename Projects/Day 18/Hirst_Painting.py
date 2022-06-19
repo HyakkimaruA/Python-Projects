@@ -13,16 +13,17 @@ t.colormode(255)
 
 hirst = t.Turtle()
 screen = t.Screen()
+hirst.speed("fastest")
 
 x_as = -200
 y_as = -200
 hirst.penup()
 hirst.setpos(x_as, y_as)
-hirst.width(8)
+hirst.hideturtle()
 
 for column in range(10):
     for row in range(10):
-        hirst.dot(10, random_color())
+        hirst.dot(20, random_color())
         hirst.penup()
         x_as += 50
         hirst.setpos(x_as, y_as)
