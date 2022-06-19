@@ -12,6 +12,7 @@ y_axis = -100
 for i in range(len(colors)):
     new_t = Turtle(shape="turtle")
     new_t.color(colors[i])
+    new_t.speed(1)
     new_t.penup()
     new_t.setpos(x=-230, y=y_axis)
     y_axis += 40
