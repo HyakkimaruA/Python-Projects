@@ -10,12 +10,12 @@ all_turtles = []
 
 y_axis = -100
 for i in range(len(colors)):
-    tim = Turtle(shape="turtle")
-    tim.color(colors[i])
-    tim.penup()
-    tim.setpos(x=-230, y=y_axis)
+    new_t = Turtle(shape="turtle")
+    new_t.color(colors[i])
+    new_t.penup()
+    new_t.setpos(x=-230, y=y_axis)
     y_axis += 40
-    all_turtles.append(tim)
+    all_turtles.append(new_t)
 
 if user_bet:
     is_race_on = True
